@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An intimate two-day experience for creative consumer-brand founders doing $1M+. September 26-27, 2026, Beverly Hills. Hosted by Alli Webb and Michael Landau.">
+<meta property="og:title" content="The Founders Circle">
+<meta property="og:description" content="You built a brand people want. Now build the company it deserves. September 26-27, 2026 - Beverly Hills, California.">
+<meta property="og:type" content="website">
+<title>The Founders Circle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#FBF2E8;
+    --paper:#FFFFFF;
+    --ink:#000000;
+    --brand:#9A6133;
+    --accent:#E9BF8A;
+    --muted:#6E6055;
+    --hair:#E3D3BE;
+    --hair-soft:#F1E4D2;
+    --on-brand:#FBF2E8;
+    --display:"EB Garamond","Adobe Garamond Pro",Garamond,"Times New Roman",serif;
+    --body:"Inter","Helvetica Neue",Arial,sans-serif;
+    --pad:clamp(1.15rem,4.5vw,4rem);
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:1.5rem;}
+  body{
+    margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);
+    font-size:clamp(.97rem,.94rem + .16vw,1.03rem);line-height:1.75;font-weight:400;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:var(--display);color:var(--brand);font-weight:300;margin:0;text-wrap:balance;line-height:1.1;}
+  p{margin:0;}
+  img{max-width:100%;}
+  ::selection{background:var(--accent);color:#3B2510;}
+  :focus-visible{outline:2px solid var(--brand);outline-offset:3px;}
+
+  /* ---------------- structure ---------------- */
+  .wrap{max-width:1220px;margin:0 auto;padding-inline:var(--pad);}
+  .narrow{max-width:760px;margin-inline:auto;}
+  section{padding-block:clamp(3.25rem,7vw,6.5rem);}
+  .paper{background:var(--paper);}
+  .stack{display:flex;flex-direction:column;}
+  .g-xs{gap:.4rem}.g-s{gap:.7rem}.g-m{gap:1.2rem}.g-l{gap:2rem}.g-xl{gap:3.25rem}
+  .center{text-align:center;}
+  .center .eyebrow-rule{margin-inline:auto;}
+
+  /* ---------------- type ---------------- */
+  .eyebrow{
+    font-family:var(--body);font-size:.64rem;font-weight:600;letter-spacing:.3em;
+    text-transform:uppercase;color:var(--brand);margin:0;
+  }
+  .eyebrow.on-dark{color:var(--accent);}
+  h2{font-size:clamp(1.85rem,1.15rem + 2.6vw,3.15rem);letter-spacing:.005em;}
+  h2 em{font-style:italic;font-weight:400;}
+  h3{font-size:clamp(1.3rem,1.1rem + .9vw,1.7rem);}
+  .kicker{
+    font-family:var(--body);font-size:.7rem;font-weight:600;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--brand);
+  }
+  .lede{font-size:clamp(1.05rem,1rem + .45vw,1.24rem);line-height:1.62;}
+  .beat{font-size:clamp(1.02rem,.98rem + .35vw,1.16rem);line-height:1.6;}
+  .muted{color:var(--muted);}
+  .serif-note{font-family:var(--display);font-style:italic;font-size:clamp(1.15rem,1rem + .75vw,1.6rem);line-height:1.4;color:var(--brand);}
+  .eyebrow-rule{width:42px;height:1px;background:var(--brand);opacity:.5;border:0;margin:0;}
+  .eyebrow-rule.on-dark{background:var(--accent);opacity:.8;}
+
+  /* ---------------- buttons ---------------- */
+  .btn{
+    display:inline-block;font-family:var(--body);font-size:.7rem;font-weight:600;letter-spacing:.22em;
+    text-transform:uppercase;text-decoration:none;padding:1.15em 2.5em;border:1px solid var(--brand);border-radius:5px;
+    background:var(--brand);color:var(--on-brand);cursor:pointer;
+    transition:background .25s ease,color .25s ease,border-color .25s ease;
+  }
+  .btn:hover{background:#7E4E28;border-color:#7E4E28;}
+  .btn-sm{padding:.85em 1.6em;font-size:.62rem;letter-spacing:.2em;}
+  .btn-dark{background:var(--ink);border-color:var(--ink);color:var(--paper);}
+  .btn-dark:hover{background:#242424;border-color:#242424;color:var(--paper);}
+  .btn-line{background:transparent;color:var(--brand);}
+  .btn-line:hover{background:var(--accent);border-color:var(--accent);color:#3B2510;}
+  .btn-inv{background:var(--accent);border-color:var(--accent);color:#3B2510;}
+  .btn-inv:hover{background:var(--paper);border-color:var(--paper);color:var(--brand);}
+
+  /* ---------------- top bar ---------------- */
+  .topbar{background:var(--brand);color:var(--on-brand);text-align:center;}
+  .topbar p{
+    padding-block:.95rem;font-size:clamp(.62rem,.58rem + .18vw,.72rem);font-weight:600;
+    letter-spacing:.26em;text-transform:uppercase;text-indent:.26em;line-height:1.5;
+  }
+
+  /* ---------------- fern ---------------- */
+  .fern{position:absolute;color:var(--accent);opacity:.4;pointer-events:none;}
+
+  /* ---------------- hero ---------------- */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#FFFFFF 0%,#FFFDFB 55%,#FEFAF4 100%);padding-block:clamp(2.5rem,6vw,5rem) clamp(2.5rem,5vw,4rem);}
+  .hero .fern.h1{right:-140px;top:-90px;width:300px;transform:rotate(-24deg) scaleX(-1);opacity:.28;}
+  .hero-date{
+    text-align:center;font-family:var(--body);font-weight:600;text-transform:uppercase;
+    color:var(--brand);font-size:clamp(.85rem,.72rem + .58vw,1.32rem);letter-spacing:.26em;
+    line-height:1.5;text-indent:.26em;margin-bottom:clamp(2rem,4vw,3.25rem);position:relative;
+  }
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:clamp(2.25rem,4.5vw,4rem);align-items:center;position:relative;}
+  @media(min-width:960px){
+    .hero-grid{grid-template-columns:.98fr 1.02fr;}
+    .hero-copy{order:2;}
+    .cluster{order:1;}
+  }
+  .hero-copy{display:flex;flex-direction:column;gap:1.35rem;align-items:center;text-align:center;}
+  .wordmark{display:flex;flex-direction:column;align-items:center;gap:.12em;}
+  .wordmark .the{
+    font-family:var(--display);font-style:italic;color:var(--brand);
+    font-size:clamp(1.35rem,1rem + 1.5vw,2.1rem);letter-spacing:.02em;text-transform:none;line-height:1;
+  }
+  .wordmark .name{
+    font-family:var(--display);font-weight:300;color:var(--brand);text-transform:uppercase;
+    font-size:clamp(2.6rem,1.3rem + 5.2vw,5.2rem);letter-spacing:.05em;line-height:.95;text-indent:.05em;margin:0;
+  }
+  .wordmark .name span{display:block;}
+  .hero-tag{
+    font-family:var(--body);font-weight:600;text-transform:uppercase;color:var(--ink);
+    font-size:clamp(.8rem,.72rem + .38vw,1rem);letter-spacing:.1em;line-height:1.6;max-width:27ch;
+  }
+  .hero-div{width:66px;height:1px;background:var(--brand);border:0;margin:.35rem 0;opacity:.6;}
+  .hero-hosted{
+    font-family:var(--display);font-style:italic;color:var(--ink);
+    font-size:clamp(1.08rem,.96rem + .68vw,1.42rem);line-height:1.45;max-width:38ch;
+  }
+  .hero-hosted strong{font-weight:400;color:var(--brand);}
+  .hero-fine{
+    font-family:var(--display);font-style:italic;color:var(--muted);
+    font-size:clamp(.92rem,.88rem + .2vw,1.02rem);line-height:1.55;max-width:44ch;
+  }
+  /* hero image cluster */
+  .cluster{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:.75rem;}
+  .cluster .slot.a{grid-column:1/6;aspect-ratio:4/3.35;}
+  .cluster .slot.b{grid-column:3/7;aspect-ratio:4/3;margin-top:-18%;z-index:2;box-shadow:0 0 0 8px #FFFFFF;}
+  @media(max-width:959px){
+    /* mobile order: hero image → copy → inset */
+    .cluster{display:contents;}
+    .cluster .slot.a{order:1;grid-column:1/-1;aspect-ratio:4/3;}
+    .hero-copy{order:2;}
+    .cluster .slot.b{order:3;grid-column:1/-1;margin-top:0;aspect-ratio:16/10;box-shadow:none;}
+  }
+
+  /* ---------------- image slots ---------------- */
+  .slot{
+    position:relative;background:var(--paper);border:1px solid var(--hair);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.45rem;
+    text-align:center;padding:1.5rem;color:var(--muted);min-height:170px;overflow:hidden;
+  }
+  .slot-k{font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;color:var(--brand);}
+  .slot-d{font-size:.78rem;max-width:30ch;line-height:1.5;}
+  .slot-tall{aspect-ratio:3/4;min-height:340px;}
+  .slot-wide{aspect-ratio:16/7;min-height:220px;}
+  .slot-sq{aspect-ratio:1/1;}
+  .slot-43{aspect-ratio:4/3;}
+
+  /* ---------------- marquee strip ---------------- */
+  .strip{background:var(--brand);color:var(--on-brand);}
+  .strip-in{
+    display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.6rem 2.25rem;
+    padding-block:1.15rem;font-size:.63rem;letter-spacing:.26em;text-transform:uppercase;font-weight:500;
+  }
+  .strip-in span{display:flex;align-items:center;gap:2.25rem;}
+  .strip-in span::after{content:"";width:4px;height:4px;background:var(--accent);border-radius:50%;}
+  .strip-in span:last-child::after{display:none;}
+
+  /* ---------------- dark (brand) band ---------------- */
+  .band{background:var(--brand);color:var(--on-brand);position:relative;overflow:hidden;}
+  .band h2,.band h3{color:var(--paper);}
+  .band .muted{color:rgba(251,242,232,.72);}
+  .band .serif-note{color:var(--accent);}
+  .band .fern{color:var(--accent);opacity:.14;}
+
+  /* pull quote band */
+  .pull{display:flex;flex-direction:column;align-items:center;gap:1.5rem;text-align:center;position:relative;}
+  .pull .qmark{font-family:var(--display);font-size:4rem;line-height:.6;color:var(--accent);opacity:.55;}
+  .pull-q{
+    font-family:var(--display);font-weight:300;font-size:clamp(1.5rem,1.05rem + 2.1vw,2.9rem);
+    line-height:1.28;color:var(--paper);max-width:22ch;
+  }
+  .pull-q em{font-style:italic;color:var(--accent);}
+
+  /* ---------------- question rows ---------------- */
+  .qgrid{display:grid;grid-template-columns:1fr;gap:0;}
+  @media(min-width:880px){.qgrid{grid-template-columns:1fr 1fr;column-gap:3.5rem;}}
+  .qrow{
+    display:flex;gap:1.15rem;align-items:baseline;padding-block:1.15rem;border-bottom:1px solid var(--hair);
+  }
+  .qrow .n{font-family:var(--display);font-size:.9rem;color:var(--brand);font-variant-numeric:tabular-nums;min-width:1.6rem;}
+  .qrow p{font-family:var(--display);font-size:clamp(1.05rem,.98rem + .45vw,1.3rem);line-height:1.4;color:var(--ink);}
+
+  /* ---------------- category cards ---------------- */
+  .cards3{display:grid;grid-template-columns:1fr;gap:clamp(1rem,2vw,1.5rem);}
+  @media(min-width:720px){.cards3{grid-template-columns:repeat(3,1fr);}}
+  .card{background:var(--paper);border:1px solid var(--hair);display:flex;flex-direction:column;}
+  .card .slot{border:0;border-bottom:1px solid var(--hair);}
+  .card-body{padding:clamp(1.15rem,2vw,1.6rem);display:flex;flex-direction:column;gap:.6rem;}
+  .card-body h3{font-size:1.28rem;}
+  .card-body p{font-size:.88rem;color:var(--muted);line-height:1.6;}
+  .chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0;}
+  .chips li{
+    border:1px solid var(--hair);background:var(--paper);padding:.55em 1.05em;
+    font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--brand);
+  }
+  .band .chips li{background:transparent;border-color:rgba(233,191,138,.45);color:var(--accent);}
+
+  /* ---------------- split ---------------- */
+  .split{display:grid;grid-template-columns:1fr;gap:clamp(1.75rem,4vw,3.75rem);align-items:center;}
+  @media(min-width:920px){
+    .split{grid-template-columns:.92fr 1.08fr;}
+    .split.flip .media{order:2;}
+  }
+  .tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0;}
+  .tags li{
+    border:1px solid var(--hair);padding:.45em .9em;font-size:.6rem;letter-spacing:.18em;
+    text-transform:uppercase;font-weight:600;color:var(--brand);background:var(--ground);
+  }
+  .paper .tags li{background:var(--paper);}
+
+  /* ---------------- portfolio trio ---------------- */
+  .trio{display:grid;grid-template-columns:1fr;gap:clamp(1rem,2vw,1.5rem);}
+  @media(min-width:760px){.trio{grid-template-columns:repeat(3,1fr);}}
+  .shot{display:flex;flex-direction:column;gap:.75rem;}
+  .shot .lbl{font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--brand);}
+  .shot .cap{font-family:var(--display);font-style:italic;font-size:1rem;color:var(--muted);}
+
+  /* ---------------- explore (numbered) ---------------- */
+  .explore{display:grid;grid-template-columns:1fr;gap:clamp(2rem,4vw,3.5rem);align-items:start;}
+  @media(min-width:1000px){
+    .explore{grid-template-columns:.72fr 1.28fr;}
+    .explore-head{position:sticky;top:2rem;}
+  }
+  .rows{display:flex;flex-direction:column;}
+  .row{
+    display:grid;grid-template-columns:auto 1fr;gap:.55rem 1.5rem;align-items:start;
+    padding-block:clamp(1.4rem,2.4vw,1.9rem);border-top:1px solid var(--hair);
+  }
+  .rows .row:last-child{border-bottom:1px solid var(--hair);}
+  .row .n{
+    font-family:var(--display);font-size:1.05rem;color:var(--accent);font-variant-numeric:tabular-nums;
+    line-height:1.9;letter-spacing:.05em;
+  }
+  .row-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.35rem .9rem;}
+  .row-q{font-family:var(--display);font-style:italic;font-size:clamp(1rem,.95rem + .35vw,1.2rem);color:var(--muted);}
+  .row-body{grid-column:2;display:flex;flex-direction:column;gap:.75rem;max-width:62ch;}
+  .row-body p{font-size:.94rem;line-height:1.72;}
+  .inline-beats{display:flex;flex-wrap:wrap;gap:.3rem .95rem;font-family:var(--display);font-size:1rem;color:var(--brand);}
+  .inline-beats span{white-space:nowrap;}
+  .inline-beats span+span::before{content:"·";margin-right:.95rem;color:var(--accent);}
+
+  /* ---------------- quote breaks ---------------- */
+  .qbreak{
+    background:var(--ground);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);
+    padding-block:clamp(2.25rem,4.5vw,3.5rem);
+  }
+  .qbreak .qb{
+    display:flex;flex-direction:column;align-items:center;gap:1.1rem;text-align:center;
+  }
+  .qbreak .qb hr{width:34px;height:1px;background:var(--accent);border:0;margin:0;}
+  .qbreak .qb p{
+    font-family:var(--display);font-style:italic;font-weight:300;color:var(--brand);
+    font-size:clamp(1.25rem,1rem + 1.5vw,2.05rem);line-height:1.34;max-width:31ch;text-wrap:balance;
+  }
+  .qbreak.feature{background:var(--brand);border-color:var(--brand);}
+  .qbreak.feature .qb p{color:var(--paper);}
+  .qbreak.feature .qb hr{background:var(--accent);opacity:.9;}
+
+  .row-quote{
+    font-family:var(--display);font-style:italic;color:var(--brand);
+    font-size:clamp(1.02rem,.96rem + .4vw,1.22rem);line-height:1.4;
+    border-left:2px solid var(--accent);padding:.15rem 0 .15rem 1.1rem;margin-top:.35rem;
+  }
+
+  /* ---------------- testimonial cards ---------------- */
+  .quotes{display:grid;grid-template-columns:1fr;gap:clamp(1rem,2vw,1.5rem);}
+  @media(min-width:880px){.quotes{grid-template-columns:repeat(3,1fr);}}
+  .qc{
+    background:rgba(251,242,232,.07);border:1px solid rgba(233,191,138,.35);
+    padding:clamp(1.4rem,2.6vw,2.1rem);display:flex;flex-direction:column;gap:1.1rem;
+  }
+  .qc q{font-family:var(--display);font-size:clamp(1.12rem,1rem + .5vw,1.35rem);line-height:1.42;color:var(--paper);quotes:"“" "”";}
+  .qc .resp{font-size:.87rem;color:rgba(251,242,232,.75);border-top:1px solid rgba(233,191,138,.3);padding-top:1.1rem;margin-top:auto;}
+
+  /* ---------------- fit panels ---------------- */
+  .fit{display:grid;grid-template-columns:1fr;gap:clamp(1.25rem,2.5vw,2rem);}
+  @media(min-width:940px){.fit{grid-template-columns:1.12fr .88fr;}}
+  .panel{border:1px solid var(--brand);background:var(--paper);padding:clamp(1.4rem,3vw,2.6rem);display:flex;flex-direction:column;gap:1.35rem;}
+  .panel.quiet{border-color:var(--hair);background:transparent;}
+  .checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.6rem;}
+  .checks li{padding-left:1.9rem;position:relative;font-size:.95rem;}
+  .checks li::before{
+    content:"";position:absolute;left:0;top:.55em;width:11px;height:6px;border-left:1.5px solid var(--brand);
+    border-bottom:1.5px solid var(--brand);transform:rotate(-45deg);
+  }
+  .checks.x li::before{
+    width:9px;height:9px;border:0;background:none;top:.62em;
+    box-shadow:inset 0 0 0 1px var(--muted);opacity:.45;transform:none;
+  }
+  .hr{height:1px;background:var(--hair);border:0;margin:0;}
+
+  /* ---------------- hosts ---------------- */
+  .hosts{display:grid;grid-template-columns:1fr;gap:clamp(1.5rem,3.5vw,3rem);}
+  @media(min-width:840px){.hosts{grid-template-columns:1fr 1fr;}}
+  .host{display:flex;flex-direction:column;gap:1.1rem;}
+  .todo{border-left:2px solid var(--accent);background:var(--ground);padding:.9rem 1.15rem;font-size:.85rem;color:var(--muted);}
+  .paper .todo{background:#FFFCF7;}
+  .todo b{display:block;color:var(--brand);font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:.6rem;margin-bottom:.3rem;}
+
+  /* ---------------- agenda columns ---------------- */
+  .steps{display:grid;grid-template-columns:1fr;gap:0;}
+  @media(min-width:700px){.steps{grid-template-columns:repeat(2,1fr);}}
+  @media(min-width:1050px){.steps{grid-template-columns:repeat(5,1fr);}}
+  .step{padding:1.6rem 1.4rem 1.6rem 0;border-top:1px solid rgba(233,191,138,.4);display:flex;flex-direction:column;gap:.6rem;}
+  @media(min-width:700px){.step{padding-right:2rem;}}
+  .step .n{font-size:.6rem;letter-spacing:.26em;color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;}
+  .step h4{font-family:var(--body);font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--paper);line-height:1.5;}
+  .step p{font-size:.87rem;color:rgba(251,242,232,.78);line-height:1.65;}
+
+  /* ---------------- 2am ---------------- */
+  .twoam{columns:2;column-gap:3rem;list-style:none;margin:0;padding:0;}
+  @media(max-width:640px){.twoam{columns:1;}}
+  .twoam li{
+    break-inside:avoid;font-family:var(--display);font-size:clamp(1.02rem,.98rem + .35vw,1.22rem);
+    color:var(--ink);padding-block:.6rem;border-bottom:1px solid var(--hair);
+  }
+
+  /* ---------------- watermark close ---------------- */
+  .close{position:relative;overflow:hidden;background:var(--accent);}
+  .mark{
+    position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:130%;text-align:center;
+    font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(4.5rem,17vw,15rem);
+    color:var(--paper);opacity:.42;line-height:.9;pointer-events:none;white-space:nowrap;
+  }
+  .close-in{position:relative;display:flex;flex-direction:column;align-items:center;gap:1.5rem;text-align:center;}
+  .close h2{color:#5F3A1B;}
+  .close .lede,.close p{color:#3B2510;}
+  .close .eyebrow{color:#5F3A1B;}
+  .outcomes{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;justify-content:center;
+    font-family:var(--display);font-size:clamp(1.1rem,1rem + .7vw,1.5rem);color:#5F3A1B;}
+  .outcomes span+span::before{content:"·";margin-right:1.75rem;color:#5F3A1B;opacity:.5;}
+
+  /* ---------------- form ---------------- */
+  .form-frame{border:1px solid var(--brand);background:var(--paper);padding:clamp(1.35rem,3.5vw,3.25rem);}
+  form{display:grid;grid-template-columns:1fr;gap:1.3rem;}
+  @media(min-width:720px){form{grid-template-columns:1fr 1fr;} .full{grid-column:1/-1;}}
+  label{display:flex;flex-direction:column;gap:.45rem;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--brand);}
+  input,select,textarea{
+    font-family:var(--body);font-size:.97rem;color:var(--ink);background:var(--ground);
+    border:1px solid var(--hair);padding:.85em 1em;width:100%;
+    letter-spacing:normal;text-transform:none;font-weight:400;
+  }
+  textarea{min-height:130px;resize:vertical;line-height:1.6;}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand);background:var(--paper);}
+  .hint{font-size:.76rem;color:var(--muted);letter-spacing:normal;text-transform:none;font-weight:400;}
+  .form-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem;}
+  .status{font-size:.88rem;color:var(--brand);min-height:1.4em;}
+  .status.err{color:#8A2A17;}
+
+  /* ---------------- footer ---------------- */
+  footer{background:var(--brand);color:var(--on-brand);padding-block:clamp(2.75rem,5vw,4.25rem);}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:2.25rem;}
+  @media(min-width:820px){.foot-grid{grid-template-columns:1.2fr .9fr .9fr;}}
+  .foot-mark{font-family:var(--display);text-transform:uppercase;letter-spacing:.28em;font-size:1rem;color:var(--paper);text-indent:.28em;}
+  .foot-line{font-family:var(--display);font-size:clamp(1.25rem,1rem + 1.1vw,1.85rem);line-height:1.3;color:var(--accent);}
+  .foot-col{display:flex;flex-direction:column;gap:.55rem;}
+  .foot-col .lbl{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600;}
+  .foot-col p{font-size:.9rem;color:rgba(251,242,232,.85);}
+  .foot-bottom{margin-top:2.75rem;padding-top:1.5rem;border-top:1px solid rgba(233,191,138,.3);
+    display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;
+    font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(251,242,232,.7);}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important;}}
+</style>
+
+</head>
+<body>
+<!-- ================= TOP BAR ================= -->
+<div class="topbar">
+  <div class="wrap"><p>Brought to you by the founders of Drybar</p></div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <svg class="fern h1" viewBox="0 0 300 400" aria-hidden="true"><path d="M150 380 C 149 300, 151 200, 150 60" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+<ellipse cx="0" cy="0" rx="47.0" ry="15.0" transform="translate(119.8,344.0) rotate(50.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="47.0" ry="15.0" transform="translate(180.2,344.0) rotate(-50.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="44.9" ry="14.4" transform="translate(120.4,326.3) rotate(48.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="44.9" ry="14.4" transform="translate(179.6,326.3) rotate(-48.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="42.7" ry="13.7" transform="translate(121.1,308.5) rotate(47.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="42.7" ry="13.7" transform="translate(178.9,308.5) rotate(-47.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="40.6" ry="13.0" transform="translate(121.9,290.7) rotate(46.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="40.6" ry="13.0" transform="translate(178.1,290.7) rotate(-46.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="38.4" ry="12.3" transform="translate(122.9,272.9) rotate(45.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="38.4" ry="12.3" transform="translate(177.1,272.9) rotate(-45.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="36.1" ry="11.6" transform="translate(123.9,255.0) rotate(43.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="36.1" ry="11.6" transform="translate(176.1,255.0) rotate(-43.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="33.8" ry="10.8" transform="translate(125.1,237.1) rotate(42.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="33.8" ry="10.8" transform="translate(174.9,237.1) rotate(-42.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="31.5" ry="10.1" transform="translate(126.3,219.2) rotate(41.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="31.5" ry="10.1" transform="translate(173.7,219.2) rotate(-41.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="29.1" ry="9.3" transform="translate(127.7,201.3) rotate(40.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="29.1" ry="9.3" transform="translate(172.3,201.3) rotate(-40.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="26.7" ry="8.5" transform="translate(129.2,183.3) rotate(38.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="26.7" ry="8.5" transform="translate(170.8,183.3) rotate(-38.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="24.2" ry="7.7" transform="translate(130.8,165.3) rotate(37.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="24.2" ry="7.7" transform="translate(169.2,165.3) rotate(-37.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="21.6" ry="6.9" transform="translate(132.6,147.2) rotate(36.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="21.6" ry="6.9" transform="translate(167.4,147.2) rotate(-36.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="18.9" ry="6.0" transform="translate(134.6,129.2) rotate(35.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="18.9" ry="6.0" transform="translate(165.4,129.2) rotate(-35.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="16.0" ry="5.1" transform="translate(136.7,111.1) rotate(33.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="16.0" ry="5.1" transform="translate(163.3,111.1) rotate(-33.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="13.0" ry="4.1" transform="translate(139.1,93.0) rotate(32.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="13.0" ry="4.1" transform="translate(160.9,93.0) rotate(-32.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="9.6" ry="3.1" transform="translate(141.8,75.0) rotate(31.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="9.6" ry="3.1" transform="translate(158.2,75.0) rotate(-31.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="5.0" ry="1.6" transform="translate(145.7,57.5) rotate(30.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="5.0" ry="1.6" transform="translate(154.3,57.5) rotate(-30.0)" fill="currentColor"/></svg>
+  <div class="wrap">
+    <p class="hero-date">September 26–27, 2026 · Beverly Hills, California</p>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="wordmark">
+        <span class="the">The</span>
+        <h1 class="name"><span>Founders</span><span>Circle</span></h1>
+      </div>
+      <p class="hero-tag">You built a brand people want. Now build the company it deserves.</p>
+      <hr class="hero-div">
+      <p class="hero-hosted">Hosted by Drybar and Messy founders<br><strong>Alli Webb</strong> &amp; <strong>Michael Landau</strong></p>
+      <a class="btn btn-dark" href="#apply">Reserve your spot</a>
+      <p class="hero-fine">An intimate two-day experience for creative consumer-brand founders doing $1M+ in revenue who are ready to scale the brand, the business — and what comes next. Limited to a curated room. Application required.</p>
+    </div>
+
+    <div class="cluster">
+      <div class="slot a">
+        <span class="slot-k">Hero image</span>
+        <span class="slot-d">Alli &amp; Michael in conversation with founders — warm, candid, natural light. 1600×1340.</span>
+      </div>
+      <div class="slot b">
+        <span class="slot-k">Inset</span>
+        <span class="slot-d">Detail shot — the room, a table, a product moment. 1200×900.</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= STRIP ================= -->
+<div class="strip">
+  <div class="wrap strip-in">
+    <span>Two days</span>
+    <span>$1M+ consumer founders</span>
+    <span>Curated room</span>
+    <span>Beverly Hills</span>
+  </div>
+</div>
+
+<!-- ================= THE MOMENT ================= -->
+<section>
+  <div class="wrap stack g-xl">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow">The moment you're in</p>
+      <hr class="eyebrow-rule">
+      <h2>There is a very specific moment in building a <em>consumer brand</em></h2>
+    </div>
+
+    <div class="split">
+      <div class="media stack g-m">
+        <div class="slot slot-43">
+          <span class="slot-k">Image</span>
+          <span class="slot-d">A founder at work in their own space — the shop floor, the studio, the line. 1400×1050.</span>
+        </div>
+      </div>
+      <div class="stack g-l">
+        <div class="stack g-s beat">
+          <p>The idea worked.</p>
+          <p>People want what you created.</p>
+          <p>Customers are buying.</p>
+          <p>Revenue has crossed seven figures.</p>
+          <p>Your brand has momentum.</p>
+        </div>
+        <p class="lede">And suddenly, the skills that got you here aren't necessarily the skills that will get you where you want to go next.</p>
+        <p class="serif-note">Because building a cool brand and building a valuable company are two very different things.</p>
+      </div>
+    </div>
+
+    <div class="stack g-m">
+      <p class="eyebrow center">Now you're dealing with bigger questions</p>
+      <div class="qgrid">
+        <div class="qrow"><span class="n">01</span><p>How do we scale without losing what made people love us in the first place?</p></div>
+        <div class="qrow"><span class="n">02</span><p>Should we raise capital — and pick the right investors/partners?</p></div>
+        <div class="qrow"><span class="n">03</span><p>How do I build the leadership team that can take this beyond me?</p></div>
+        <div class="qrow"><span class="n">04</span><p>How do we turn customers into evangelists?</p></div>
+        <div class="qrow"><span class="n">05</span><p>How do I become the face of the brand without becoming trapped by it?</p></div>
+        <div class="qrow"><span class="n">06</span><p>How do I know which opportunities are distractions and which could change everything?</p></div>
+        <div class="qrow"><span class="n">07</span><p>How do I build something that could eventually be acquired — even if I don't want to sell right now?</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>You can be wildly successful and still be figuring it out.</p>
+  </div>
+</section>
+
+<!-- ================= PULL QUOTE BAND ================= -->
+<section class="band">
+  <svg class="fern" viewBox="0 0 300 400" aria-hidden="true" style="left:-120px;bottom:-170px;width:340px;transform:rotate(20deg);"><path d="M150 380 C 149 300, 151 200, 150 60" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+<ellipse cx="0" cy="0" rx="47.0" ry="15.0" transform="translate(119.8,344.0) rotate(50.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="47.0" ry="15.0" transform="translate(180.2,344.0) rotate(-50.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="44.9" ry="14.4" transform="translate(120.4,326.3) rotate(48.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="44.9" ry="14.4" transform="translate(179.6,326.3) rotate(-48.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="42.7" ry="13.7" transform="translate(121.1,308.5) rotate(47.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="42.7" ry="13.7" transform="translate(178.9,308.5) rotate(-47.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="40.6" ry="13.0" transform="translate(121.9,290.7) rotate(46.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="40.6" ry="13.0" transform="translate(178.1,290.7) rotate(-46.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="38.4" ry="12.3" transform="translate(122.9,272.9) rotate(45.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="38.4" ry="12.3" transform="translate(177.1,272.9) rotate(-45.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="36.1" ry="11.6" transform="translate(123.9,255.0) rotate(43.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="36.1" ry="11.6" transform="translate(176.1,255.0) rotate(-43.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="33.8" ry="10.8" transform="translate(125.1,237.1) rotate(42.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="33.8" ry="10.8" transform="translate(174.9,237.1) rotate(-42.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="31.5" ry="10.1" transform="translate(126.3,219.2) rotate(41.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="31.5" ry="10.1" transform="translate(173.7,219.2) rotate(-41.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="29.1" ry="9.3" transform="translate(127.7,201.3) rotate(40.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="29.1" ry="9.3" transform="translate(172.3,201.3) rotate(-40.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="26.7" ry="8.5" transform="translate(129.2,183.3) rotate(38.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="26.7" ry="8.5" transform="translate(170.8,183.3) rotate(-38.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="24.2" ry="7.7" transform="translate(130.8,165.3) rotate(37.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="24.2" ry="7.7" transform="translate(169.2,165.3) rotate(-37.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="21.6" ry="6.9" transform="translate(132.6,147.2) rotate(36.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="21.6" ry="6.9" transform="translate(167.4,147.2) rotate(-36.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="18.9" ry="6.0" transform="translate(134.6,129.2) rotate(35.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="18.9" ry="6.0" transform="translate(165.4,129.2) rotate(-35.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="16.0" ry="5.1" transform="translate(136.7,111.1) rotate(33.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="16.0" ry="5.1" transform="translate(163.3,111.1) rotate(-33.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="13.0" ry="4.1" transform="translate(139.1,93.0) rotate(32.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="13.0" ry="4.1" transform="translate(160.9,93.0) rotate(-32.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="9.6" ry="3.1" transform="translate(141.8,75.0) rotate(31.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="9.6" ry="3.1" transform="translate(158.2,75.0) rotate(-31.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="5.0" ry="1.6" transform="translate(145.7,57.5) rotate(30.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="5.0" ry="1.6" transform="translate(154.3,57.5) rotate(-30.0)" fill="currentColor"/></svg>
+  <svg class="fern" viewBox="0 0 300 400" aria-hidden="true" style="right:-110px;top:-170px;width:320px;transform:rotate(-160deg);"><path d="M150 380 C 149 300, 151 200, 150 60" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+<ellipse cx="0" cy="0" rx="47.0" ry="15.0" transform="translate(119.8,344.0) rotate(50.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="47.0" ry="15.0" transform="translate(180.2,344.0) rotate(-50.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="44.9" ry="14.4" transform="translate(120.4,326.3) rotate(48.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="44.9" ry="14.4" transform="translate(179.6,326.3) rotate(-48.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="42.7" ry="13.7" transform="translate(121.1,308.5) rotate(47.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="42.7" ry="13.7" transform="translate(178.9,308.5) rotate(-47.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="40.6" ry="13.0" transform="translate(121.9,290.7) rotate(46.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="40.6" ry="13.0" transform="translate(178.1,290.7) rotate(-46.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="38.4" ry="12.3" transform="translate(122.9,272.9) rotate(45.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="38.4" ry="12.3" transform="translate(177.1,272.9) rotate(-45.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="36.1" ry="11.6" transform="translate(123.9,255.0) rotate(43.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="36.1" ry="11.6" transform="translate(176.1,255.0) rotate(-43.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="33.8" ry="10.8" transform="translate(125.1,237.1) rotate(42.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="33.8" ry="10.8" transform="translate(174.9,237.1) rotate(-42.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="31.5" ry="10.1" transform="translate(126.3,219.2) rotate(41.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="31.5" ry="10.1" transform="translate(173.7,219.2) rotate(-41.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="29.1" ry="9.3" transform="translate(127.7,201.3) rotate(40.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="29.1" ry="9.3" transform="translate(172.3,201.3) rotate(-40.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="26.7" ry="8.5" transform="translate(129.2,183.3) rotate(38.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="26.7" ry="8.5" transform="translate(170.8,183.3) rotate(-38.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="24.2" ry="7.7" transform="translate(130.8,165.3) rotate(37.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="24.2" ry="7.7" transform="translate(169.2,165.3) rotate(-37.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="21.6" ry="6.9" transform="translate(132.6,147.2) rotate(36.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="21.6" ry="6.9" transform="translate(167.4,147.2) rotate(-36.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="18.9" ry="6.0" transform="translate(134.6,129.2) rotate(35.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="18.9" ry="6.0" transform="translate(165.4,129.2) rotate(-35.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="16.0" ry="5.1" transform="translate(136.7,111.1) rotate(33.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="16.0" ry="5.1" transform="translate(163.3,111.1) rotate(-33.8)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="13.0" ry="4.1" transform="translate(139.1,93.0) rotate(32.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="13.0" ry="4.1" transform="translate(160.9,93.0) rotate(-32.5)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="9.6" ry="3.1" transform="translate(141.8,75.0) rotate(31.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="9.6" ry="3.1" transform="translate(158.2,75.0) rotate(-31.2)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="5.0" ry="1.6" transform="translate(145.7,57.5) rotate(30.0)" fill="currentColor"/>
+<ellipse cx="0" cy="0" rx="5.0" ry="1.6" transform="translate(154.3,57.5) rotate(-30.0)" fill="currentColor"/></svg>
+  <div class="wrap pull">
+    <p class="eyebrow on-dark">And perhaps the biggest question</p>
+    <p class="qmark">“</p>
+    <p class="pull-q">How do I go from a successful founder with a great brand to building <em>something truly extraordinary?</em></p>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>Building the business is only half the work. Building yourself alongside it is the other half.</p>
+  </div>
+</section>
+
+<!-- ================= BUILT FOR ================= -->
+<section class="paper" id="for">
+  <div class="wrap stack g-xl">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow">Why we're doing this</p>
+      <hr class="eyebrow-rule">
+      <h2>That's why we're creating <em>The Founders Circle</em></h2>
+      <p class="lede">Built specifically for creative consumer founders.</p>
+    </div>
+
+    <div class="cards3">
+      <article class="card">
+        <div class="slot slot-43">
+          <span class="slot-k">Image</span>
+          <span class="slot-d">Beauty / wellness founder at work. 1000×750.</span>
+        </div>
+        <div class="card-body">
+          <h3>Not consultants.</h3>
+          <p>Founders who make things people buy, wear, eat, drink, use, experience and tell their friends about.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="slot slot-43">
+          <span class="slot-k">Image</span>
+          <span class="slot-d">Food &amp; beverage or hospitality founder. 1000×750.</span>
+        </div>
+        <div class="card-body">
+          <h3>Not coaches.</h3>
+          <p>Founders who make things people buy, wear, eat, drink, use, experience and tell their friends about.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="slot slot-43">
+          <span class="slot-k">Image</span>
+          <span class="slot-d">Retail or experiential concept — storefront, studio, pop-up. 1000×750.</span>
+        </div>
+        <div class="card-body">
+          <h3>Not people trying to figure out their first business idea.</h3>
+          <p>Founders who make things people buy, wear, eat, drink, use, experience and tell their friends about.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="stack g-m narrow center">
+      <ul class="chips" style="justify-content:center;">
+        <li>Beauty</li><li>Wellness</li><li>Fashion</li><li>Food &amp; Beverage</li>
+        <li>Hospitality</li><li>Lifestyle</li><li>Home</li><li>Fitness</li>
+        <li>Retail</li><li>Experiential concepts</li>
+      </ul>
+      <p class="muted">And the next consumer category somebody in this room may be inventing right now.</p>
+      <hr class="hr" style="width:100%;">
+      <p class="lede">If you've crossed seven figures, you've already done something incredibly difficult:</p>
+      <p class="serif-note">You got the market to care.</p>
+      <p class="lede">Now the question is how far you can take it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak feature">
+  <div class="wrap qb">
+    <hr>
+    <p>Surround yourself with people who are smarter than you.</p>
+  </div>
+</section>
+
+<!-- ================= WE'VE LIVED THIS ================= -->
+<section>
+  <div class="wrap split">
+    <div class="media stack g-m">
+      <div class="slot slot-tall">
+        <span class="slot-k">Portrait</span>
+        <span class="slot-d">Alli Webb — editorial portrait, vertical. 1200×1600.</span>
+      </div>
+      <ul class="tags">
+        <li>Drybar</li><li>150+ locations</li><li>$275M acquisition</li>
+      </ul>
+    </div>
+    <div class="stack g-l">
+      <p class="eyebrow">We've lived this</p>
+      <h2>Alli didn't start Drybar with a plan to create a <em>massive national brand</em></h2>
+      <p>She saw a simple problem and created an experience women loved.</p>
+      <div class="stack g-xs beat">
+        <p>One shop became two.</p>
+        <p>Two became more.</p>
+      </div>
+      <p>And eventually Drybar grew into a category-defining brand with more than 150 locations, and was ultimately acquired for $275 million.</p>
+      <p class="serif-note">But you don't get from an idea to a brand like that in a straight line.</p>
+      <div class="inline-beats">
+        <span>Capital</span><span>Partners</span><span>Locations</span><span>Products</span><span>People</span>
+        <span>Culture</span><span>Marketing</span><span>Leadership</span><span>Growth</span><span>Brand extensions</span>
+      </div>
+      <p>Opportunities that look incredible and aren't. Mistakes that become expensive lessons. And moments when the founder has to evolve just as quickly as the company does.</p>
+      <p>Michael has been there for the ride too — building businesses, developing brands and working alongside creative entrepreneurs as ideas turn into companies.</p>
+      <hr class="hr">
+      <p class="lede">Between us, we've seen what happens behind the headlines. The good stuff. The hard stuff. And the messy stuff.</p>
+      <p class="serif-note">That's what we want to talk about.</p>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>The beauty of a breakdown is that you get to learn from it and get to keep learning and growing.</p>
+  </div>
+</section>
+
+<!-- ================= NOT ANOTHER CONFERENCE ================= -->
+<section class="paper" id="room">
+  <div class="wrap stack g-xl">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow">Intentionally different</p>
+      <hr class="eyebrow-rule">
+      <h2>This isn't another <em>entrepreneur conference</em></h2>
+      <p class="lede">We don't need another ballroom filled with hundreds of people exchanging QR codes. And we definitely don't need two days of successful people standing on a stage pretending everything worked perfectly.</p>
+    </div>
+
+    <div class="trio">
+      <div class="shot">
+        <p class="lbl">Founders talking to founders</p>
+        <div class="slot slot-43">
+          <span class="slot-k">Image</span>
+          <span class="slot-d">Two founders mid-conversation. 1000×750.</span>
+        </div>
+        <p class="cap">Sharing what's working. Sharing what didn't.</p>
+      </div>
+      <div class="shot">
+        <p class="lbl">Opening their networks</p>
+        <div class="slot slot-43">
+          <span class="slot-k">Image</span>
+          <span class="slot-d">An introduction being made — handshake, exchange, small group. 1000×750.</span>
+        </div>
+        <p class="cap">Making introductions.</p>
+      </div>
+      <div class="shot">
+        <p class="lbl">Challenging assumptions</p>
+        <div class="slot slot-43">
+          <span class="slot-k">Image</span>
+          <span class="slot-d">Small group around a table, working through something real. 1000×750.</span>
+        </div>
+        <p class="cap">Challenging each other's assumptions.</p>
+      </div>
+    </div>
+
+    <div class="narrow center stack g-m">
+      <p class="lede">A curated room of creative consumer founders who are already generating $1M+ and are wrestling with many of the same decisions you are.</p>
+      <p>We're keeping it intimate because the room matters. We want you to actually know the people sitting next to you.</p>
+      <p>And having the conversations that are difficult to have with someone who hasn't built what you're building.</p>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>Create an environment where people feel they can tell you the truth.</p>
+  </div>
+</section>
+
+<!-- ================= $1M ================= -->
+<section>
+  <div class="wrap split flip">
+    <div class="media">
+      <div class="slot slot-43">
+        <span class="slot-k">Image</span>
+        <span class="slot-d">Growth moment — a second location opening, a production run, a shelf set. 1400×1050.</span>
+      </div>
+    </div>
+    <div class="stack g-l">
+      <p class="eyebrow">From $1 million to what's possible</p>
+      <h2>Crossing seven figures <em>proves something</em></h2>
+      <p class="lede">You've created something the market wants.</p>
+      <p>But the road from $1 million to $10 million is different from the road to $1 million. And the road from $10 million to $50 million is different again.</p>
+      <p>At each stage, the founder has to make different decisions.</p>
+      <p class="serif-note">What got you here can become the very thing preventing you from getting there.</p>
+      <p>For two days, we're going to dig into the decisions that can determine what your brand becomes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak feature">
+  <div class="wrap qb">
+    <hr>
+    <p>There's a point in every successful business where hustle has to become leadership.</p>
+  </div>
+</section>
+
+<!-- ================= WHAT WE'LL EXPLORE ================= -->
+<section class="paper" id="explore">
+  <div class="wrap explore">
+    <div class="explore-head stack g-m">
+      <p class="eyebrow">Seven conversations</p>
+      <hr class="eyebrow-rule">
+      <h2>What we'll <em>explore</em></h2>
+      <p class="muted">The decisions that determine what your brand becomes.</p>
+      <div><a class="btn btn-line" href="#apply">Reserve your spot</a></div>
+    </div>
+
+    <div class="rows">
+      <article class="row">
+        <span class="n">01</span>
+        <div class="row-head"><h3>Brand</h3><p class="row-q">How do you become the brand people can't stop talking about?</p></div>
+        <div class="row-body">
+          <p>The strongest consumer brands don't simply sell products.</p>
+          <p class="row-quote">The customer is your compass.</p>
+          <div class="inline-beats"><span>Identity</span><span>Community</span><span>Emotion</span><span>Ritual</span><span>Belonging</span></div>
+          <p>We'll explore what makes a consumer brand stand out in an increasingly noisy marketplace — and how you protect the magic as the business grows.</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <span class="n">02</span>
+        <div class="row-head"><h3>Scale</h3><p class="row-q">What actually has to change to get to the next level?</p></div>
+        <div class="row-body">
+          <p>The founder who gets a company to $1 million, or one or two locations open, often has their hands in everything. That works. Until it doesn't.</p>
+          <p class="row-quote">You can't possibly do it all. You can't be good at everything.</p>
+          <p>We'll talk about the people, infrastructure, leadership and decisions required to scale without creating a company completely dependent on you.</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <span class="n">03</span>
+        <div class="row-head"><h3>Customer Obsession</h3><p class="row-q">How do you turn buyers into believers?</p></div>
+        <div class="row-body">
+          <p>Drybar didn't win because women couldn't find somewhere to get their hair blown out. It won because the experience felt different.</p>
+          <p>From the language to the environment to the tiniest brand details, everything reinforced what Drybar stood for.</p>
+          <p class="row-quote">We weren't just selling blowouts. We sold the happiness and confidence that comes with it.</p>
+          <p>We'll explore how memorable customer experiences create loyalty, referrals, community and brands people genuinely want to belong to.</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <span class="n">04</span>
+        <div class="row-head"><h3>Founder Brand</h3><p class="row-q">When should the founder step forward?</p></div>
+        <div class="row-body">
+          <p>Some of today's most powerful consumer brands are inseparable from the founders behind them. But becoming the face of your company creates opportunities — and complications.</p>
+          <p class="row-quote">The founder who builds the company isn't always the CEO the company needs to scale.</p>
+          <p>We'll explore how to use your story, personality and platform to grow the company without making the entire business dependent on your presence.</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <span class="n">05</span>
+        <div class="row-head"><h3>Money</h3><p class="row-q">Capital can accelerate everything — including your mistakes.</p></div>
+        <div class="row-body">
+          <div class="inline-beats"><span>Bootstrapping</span><span>Outside investors</span><span>Strategic capital</span><span>Debt</span><span>Private equity</span></div>
+          <p>Every option changes the game.</p>
+          <p>We'll have candid conversations about raising money, choosing partners, maintaining control and understanding what you're really agreeing to when someone writes the check.</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <span class="n">06</span>
+        <div class="row-head"><h3>Opportunity</h3><p class="row-q">The bigger you become, the more opportunities show up.</p></div>
+        <div class="row-body">
+          <div class="inline-beats"><span>Retail</span><span>Licensing</span><span>Collaborations</span><span>New product lines</span><span>International expansion</span><span>Partnerships</span><span>Media</span><span>Acquisitions</span></div>
+          <p>The challenge eventually stops being finding opportunities. It becomes knowing which ones deserve a yes.</p>
+          <p>We'll explore how to recognize the opportunities that can expand your brand — and the shiny objects that can quietly derail it.</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <span class="n">07</span>
+        <div class="row-head"><h3>Exit</h3><p class="row-q">Build a company somebody would want to buy.</p></div>
+        <div class="row-body">
+          <p>You don't have to want an exit today to build with one in mind. Understanding what makes a consumer company attractive to potential acquirers can make you a smarter founder right now.</p>
+          <p class="row-quote">Your greatest strength can become your biggest bottleneck if you don't learn to let go.</p>
+          <p>We'll talk about enterprise value, founder dependency, brand equity, leadership and what changes when your company becomes bigger than you.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>You don't have to know everything. You have to know who to bring into the room.</p>
+  </div>
+</section>
+
+<!-- ================= OVERHEARD BAND ================= -->
+<section class="band">
+  <div class="wrap stack g-xl">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow on-dark">The room is part of the experience</p>
+      <hr class="eyebrow-rule on-dark">
+      <h2>Imagine being able to say:</h2>
+    </div>
+    <div class="quotes">
+      <div class="qc">
+        <q>We're at $4 million and retail is interested. Are we ready?</q>
+        <p class="resp">And someone across the table has already made that decision.</p>
+      </div>
+      <div class="qc">
+        <q>We have an investor offering us capital, but something doesn't feel right.</q>
+        <p class="resp">And another founder has been through three rounds.</p>
+      </div>
+      <div class="qc">
+        <q>We're growing like crazy, and I'm becoming the bottleneck.</q>
+        <p class="resp">And the person beside you just solved the same problem.</p>
+      </div>
+    </div>
+    <div class="narrow center stack g-s">
+      <p class="lede">That's a very different conversation than getting generic business advice.</p>
+      <p class="serif-note">Context changes everything.</p>
+      <p class="lede">That's why we're curating the room.</p>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>The bigger the business gets, the less it can depend on you.</p>
+  </div>
+</section>
+
+<!-- ================= FIT ================= -->
+<section>
+  <div class="wrap stack g-l">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow">Who belongs in the room</p>
+      <hr class="eyebrow-rule">
+    </div>
+    <div class="fit">
+      <div class="panel">
+        <p class="kicker">This room is for you if…</p>
+        <p>You're the founder or co-founder of a consumer-facing brand generating <strong>$1M+ in annual revenue</strong>. You've proven the concept. You have customers. You have momentum. And you're ready to think bigger about what you're building.</p>
+        <p class="muted">You may be:</p>
+        <ul class="checks">
+          <li>Scaling from $1M toward $10M+</li>
+          <li>Preparing for your next major growth phase</li>
+          <li>Expanding into retail or new distribution channels</li>
+          <li>Considering outside capital</li>
+          <li>Building your executive team</li>
+          <li>Expanding your product line</li>
+          <li>Growing your founder platform</li>
+          <li>Navigating a partnership</li>
+          <li>Thinking about an eventual exit</li>
+          <li>Trying to scale without destroying the culture and creativity that made the company special</li>
+        </ul>
+        <hr class="hr">
+        <p class="serif-note">Most importantly: you're willing to talk openly about what's really happening inside the business.</p>
+      </div>
+      <div class="panel quiet">
+        <p class="kicker">This probably isn't your room if…</p>
+        <ul class="checks x muted">
+          <li>You're still looking for your business idea.</li>
+          <li>You're pre-revenue.</li>
+          <li>You're looking for a step-by-step course on starting a company.</li>
+          <li>Or you just want to collect business cards.</li>
+        </ul>
+        <p class="muted">There are plenty of great places for that. This isn't one of them.</p>
+      </div>
+    </div>
+
+    <div class="narrow center stack g-m" style="align-items:center;margin-top:clamp(1.5rem,3vw,2.5rem);">
+      <p class="lede">The Founders Circle is for people who have already built something real — and want to be around others who have too.</p>
+      <a class="btn" href="#apply">Reserve your spot</a>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>Recognize your strengths and bring in people who know things you don't.</p>
+  </div>
+</section>
+
+<!-- ================= HOSTS ================= -->
+<section class="paper" id="hosts">
+  <div class="wrap stack g-xl">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow">About the hosts</p>
+      <hr class="eyebrow-rule">
+      <h2>Alli Webb &amp; <em>Michael Landau</em></h2>
+    </div>
+    <div class="hosts">
+      <div class="host">
+        <div class="slot slot-43">
+          <span class="slot-k">Portrait</span>
+          <span class="slot-d">Alli Webb — 4:3 or square headshot on a light ground. 1400×1050.</span>
+        </div>
+        <h3>Alli Webb</h3>
+        <div class="todo"><b>Bio to come</b>Drop Alli's bio here — Drybar, the 150+ location build, the $275M acquisition, Messy, and what she's building now.</div>
+      </div>
+      <div class="host">
+        <div class="slot slot-43">
+          <span class="slot-k">Portrait</span>
+          <span class="slot-d">Michael Landau — 4:3 or square headshot on a light ground. 1400×1050.</span>
+        </div>
+        <h3>Michael Landau</h3>
+        <div class="todo"><b>Bio to come</b>Drop Michael's bio here — the businesses built, the brands developed, and the work alongside creative entrepreneurs turning ideas into companies.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>Success doesn't mean you stop making mistakes. It means you get better at recovering from them.</p>
+  </div>
+</section>
+
+<!-- ================= TWO DAYS (split) ================= -->
+<section id="days">
+  <div class="wrap split">
+    <div class="media">
+      <div class="slot slot-tall">
+        <span class="slot-k">Image</span>
+        <span class="slot-d">Beverly Hills — the venue, a terrace, a quiet corner of the room. 1200×1600.</span>
+      </div>
+    </div>
+    <div class="stack g-l">
+      <p class="eyebrow">September 26 &amp; 27, 2026 · Beverly Hills</p>
+      <h2>Two days in <em>Beverly Hills</em></h2>
+      <p class="lede">For two days, we're getting out of the weeds and looking at the bigger picture.</p>
+      <p>Not through endless presentations. Through conversations.</p>
+      <hr class="hr">
+      <p class="kicker">Expect:</p>
+      <p class="muted">Founder-to-founder conversations. Strategic deep dives. Hot seats. Curated connections. And the stuff that didn't work.</p>
+      <div><a class="btn" href="#apply">Reserve your spot</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPECT (band, 5 columns) ================= -->
+<section class="band">
+  <div class="wrap stack g-l">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow on-dark">Expect</p>
+      <hr class="eyebrow-rule on-dark">
+      <h2>Not through endless presentations. <em>Through conversations.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="n">01</span>
+        <h4>Founder-to-founder conversations</h4>
+        <p>The stories and lessons that rarely make it onto conference stages.</p>
+      </div>
+      <div class="step">
+        <span class="n">02</span>
+        <h4>Strategic deep dives</h4>
+        <p>Brand. Growth. Capital. Team. Customer experience. Founder visibility. Scale. Exit.</p>
+      </div>
+      <div class="step">
+        <span class="n">03</span>
+        <h4>Hot seats</h4>
+        <p>Bring a real decision you're facing and tap into the collective experience of the room.</p>
+      </div>
+      <div class="step">
+        <span class="n">04</span>
+        <h4>Curated connections</h4>
+        <p>We'll intentionally create opportunities for founders who should know each other to connect.</p>
+      </div>
+      <div class="step">
+        <span class="n">05</span>
+        <h4>The stuff that didn't work</h4>
+        <p>Some of the most valuable business lessons come from expensive mistakes. Those stories belong in the room too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>Don't let perfect get in the way of progress.</p>
+  </div>
+</section>
+
+<!-- ================= 2AM QUESTION ================= -->
+<section class="paper">
+  <div class="wrap stack g-l">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow">Come with your biggest question</p>
+      <hr class="eyebrow-rule">
+      <h2>Not the one you think sounds impressive. <em>The one you're actually thinking about at 2:00 in the morning.</em></h2>
+    </div>
+    <div class="narrow">
+      <ul class="twoam">
+        <li>How do I get to $10 million?</li>
+        <li>Should we take the money?</li>
+        <li>Should I open more locations?</li>
+        <li>Is this partnership right?</li>
+        <li>Should we go into retail?</li>
+        <li>Am I still the right CEO?</li>
+        <li>How visible should I become?</li>
+        <li>How do I get out of the day-to-day?</li>
+        <li>Could this company eventually sell?</li>
+        <li>How big could this actually become?</li>
+      </ul>
+      <p class="serif-note center" style="margin-top:2rem;">Bring that question to Beverly Hills.</p>
+    </div>
+  </div>
+</section>
+
+<!-- quote -->
+<section class="qbreak">
+  <div class="wrap qb">
+    <hr>
+    <p>You've got to be able to roll with all of it.</p>
+  </div>
+</section>
+
+<!-- ================= CLOSE ================= -->
+<section class="close">
+  <p class="mark" aria-hidden="true">Extraordinary.</p>
+  <div class="wrap close-in">
+    <p class="eyebrow">Leave with your next move</p>
+    <h2>You don't need 100 new strategies.</h2>
+    <p class="lede narrow">You need clarity around the right next move. And access to people who understand the decisions you're making because they've made them too.</p>
+    <p>That's what these two days are designed to create.</p>
+    <div class="outcomes">
+      <span>Greater clarity</span><span>Better decisions</span><span>Stronger relationships</span><span>Bigger possibilities</span>
+    </div>
+    <p>And a circle of founders you can continue growing alongside.</p>
+    <a class="btn" href="#apply">Reserve your spot</a>
+  </div>
+</section>
+
+<!-- ================= APPLY ================= -->
+<section id="apply">
+  <div class="wrap stack g-l">
+    <div class="narrow center stack g-m">
+      <p class="eyebrow">Reserve your spot</p>
+      <hr class="eyebrow-rule">
+      <h2>The Founders Circle</h2>
+      <p class="lede">For creative consumer-brand founders doing $1M+ · September 26–27, 2026 · Beverly Hills, California · Hosted by Alli Webb &amp; Michael Landau</p>
+    </div>
+
+    <div class="form-frame">
+      <form id="apply-form" novalidate>
+        <label>First name<input type="text" name="first_name" autocomplete="given-name" required></label>
+        <label>Last name<input type="text" name="last_name" autocomplete="family-name" required></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Mobile<input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Brand / company<input type="text" name="company" autocomplete="organization" required></label>
+        <label>Website or Instagram<input type="text" name="website" placeholder="brand.com or @brand"></label>
+        <label>Category
+          <select name="category" required>
+            <option value="">Select one</option>
+            <option>Beauty</option><option>Wellness</option><option>Fashion</option>
+            <option>Food &amp; Beverage</option><option>Hospitality</option><option>Lifestyle</option>
+            <option>Home</option><option>Fitness</option><option>Retail</option>
+            <option>Experiential concepts</option><option>Something new</option>
+          </select>
+        </label>
+        <label>Annual revenue
+          <select name="revenue" required>
+            <option value="">Select one</option>
+            <option>Under $1M</option>
+            <option>$1M – $3M</option>
+            <option>$3M – $10M</option>
+            <option>$10M – $25M</option>
+            <option>$25M+</option>
+          </select>
+        </label>
+        <label class="full">Your biggest question right now
+          <textarea name="question" placeholder="The one you're actually thinking about at 2:00 in the morning." required></textarea>
+          <span class="hint">This is the part we read first.</span>
+        </label>
+        <label class="full">How did you hear about The Founders Circle?<input type="text" name="source"></label>
+        <div class="full form-actions">
+          <button class="btn" type="submit">Submit application</button>
+          <p class="status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+      <p class="hint" style="margin-top:1.4rem;">Limited to a curated room. Application required.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <p class="foot-mark">The Founders Circle</p>
+        <p class="foot-line">You created something people want.</p>
+        <div style="margin-top:.5rem;"><a class="btn btn-inv btn-sm" href="#apply">Reserve your spot</a></div>
+      </div>
+      <div class="foot-col">
+        <p class="lbl">When &amp; where</p>
+        <p>September 26–27, 2026</p>
+        <p>Beverly Hills, California</p>
+      </div>
+      <div class="foot-col">
+        <p class="lbl">Hosted by</p>
+        <p>Alli Webb</p>
+        <p>Michael Landau</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>For creative consumer-brand founders doing $1M+</span>
+      <span>Limited to a curated room</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var form = document.getElementById('apply-form');
+    var status = document.getElementById('form-status');
+    if (!form) return;
+
+    // Point this at your endpoint (GoHighLevel form/webhook URL) to go live.
+    var ENDPOINT = '';
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.classList.remove('err');
+
+      var required = form.querySelectorAll('[required]');
+      for (var i = 0; i < required.length; i++) {
+        if (!required[i].value.trim()) {
+          status.textContent = 'Please complete every required field.';
+          status.classList.add('err');
+          required[i].focus();
+          return;
+        }
+      }
+      var email = form.elements['email'].value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = 'That email address doesn’t look right.';
+        status.classList.add('err');
+        form.elements['email'].focus();
+        return;
+      }
+
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = v; });
+
+      if (!ENDPOINT) {
+        status.textContent = 'Form is not connected yet — add your endpoint to go live.';
+        console.log('Application payload:', data);
+        return;
+      }
+
+      status.textContent = 'Sending…';
+      fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('Request failed');
+        form.reset();
+        status.textContent = 'Thank you — your application is in. We’ll be in touch within two business days.';
+      }).catch(function () {
+        status.textContent = 'Something went wrong. Email us and we’ll get you in.';
+        status.classList.add('err');
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
